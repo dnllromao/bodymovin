@@ -10,13 +10,11 @@
 <script>
 
     var animData = {
-        wrapper: document.getElementById('bodymovin'),
-        animType: 'html',
-        loop: true,
-        prerender: true,
-        autoplay: true,
-        path: 'data.json'
-
+      container: document.getElementById('bodymovin'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: 'data.json'
     };
     var anim = lottie.loadAnimation(animData);
     console.log(anim)
